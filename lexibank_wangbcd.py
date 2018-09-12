@@ -6,13 +6,15 @@ from clldutils.path import Path
 import lingpy
 
 from clldutils.path import Path
+from clldutils.misc import slug
 from pylexibank.dataset import Metadata
 from pylexibank.dataset import Dataset as BaseDataset
-from pylexibank.lingpy_util import getEvoBibAsBibtex
+from pylexibank.util import getEvoBibAsBibtex
 
 
 class Dataset(BaseDataset):
     dir = Path(__file__).parent
+    id = 'wangbcd'
 
     def cmd_download(self, **kw):
         d = Path(
@@ -30,63 +32,50 @@ class Dataset(BaseDataset):
         """
         We make sure to always only yield one form per raw lexeme.
         """
-        return Dataset.split_forms(self, row, value)[:1]
+        return BaseDataset.split_forms(self, row, value)[:1]
 
     def cmd_install(self, **kw):
         wl = lingpy.Wordlist(self.raw.posix('chinese.tsv'))
-        gcode = {x['NAME']: x['GLOTTOCODE'] for x in self.languages}
-        ccode = {x.english: x.concepticon_id for x in
-                 self.conceptlist.concepts.values()}
+        maxcogid = 0
 
         with self.cldf as ds:
-            ds.add_sources(*self.raw.read_bib())
+            ds.add_sources()
+            ds.add_languages(id_factory=lambda l: l['Name'])
+            ds.add_concepts(id_factory=lambda c: slug(c.label, lowercase=False))
 
             # store list of proto-form to cognate set
             p2c = {}
 
             for k in wl:
-                ds.add_concept(
-                    ID=wl[k, 'concept'],
-                    gloss=wl[k, 'concept'],
-                    conceptset=ccode[wl[k, 'concept']])
-                ds.add_language(
-                    ID=wl[k, 'doculect'],
-                    name=wl[k, 'doculect'],
-                    glottocode=gcode[wl[k, 'doculect']])
                 for row in ds.add_lexemes(
                     Language_ID=wl[k, 'doculect'],
-                    Parameter_ID=wl[k, 'concept'],
+                    Parameter_ID=slug(wl[k, 'concept'], lowercase=False),
                     Value=wl[k, 'ipa'],
                     Source='Hamed2006',
                     Cognacy=wl[k, 'COGID']
                 ):
                     ds.add_cognate(
                         lexeme=row,
-                        Cognateset_ID='{0}-{1}'.format(
-                            slug(wl[k, 'concept']), wl[k, 'cogid']),
-                        Cognate_source='Hamed2006')
+                        Cognateset_ID=wl[k, 'cogid'],
+                        Source=['Hamed2006'])
+                maxcogid = max([maxcogid, int(wl[k, 'cogid'])])
                 p2c[wl[k, 'proto']] = wl[k, 'cogid']
             idx = max([k for k in wl]) + 1
-            ds.add_language(
-                    ID='OldChinese',
-                    name='Old Chinese',
-                    glottocode='sini1245')
             for line in lingpy.csv2list(self.raw.posix('old_chinese.csv')):
-                ds.add_concept(
-                    ID=line[0],
-                    gloss=line[0],
-                    conceptset=ccode[line[0]])
                 for val in line[1].split(', '):
+                    cogid = p2c.get(val)
+                    if not cogid:
+                        maxcogid += 1
+                        cogid = p2c[val] = maxcogid
                     for row in ds.add_lexemes(
                         Language_ID='OldChinese',
-                        Parameter_ID=line[0],
+                        Parameter_ID=slug(line[0], lowercase=False),
                         Value=val,
                         Source='Hamed2006',
                         Cognacy=p2c.get(val, val)
                     ):
                         ds.add_cognate(
                             lexeme=row,
-                            Cognateset_ID='{0}-{1}'.format(
-                                slug(line[0]), p2c.get(val, val)),
-                            Cognate_source='Hamed2006')
+                            Cognateset_ID=cogid,
+                            Source=['Hamed2006'])
                     idx += 1
