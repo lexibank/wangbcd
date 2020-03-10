@@ -4,16 +4,11 @@ from pathlib import Path
 from clldutils.misc import slug
 from pylexibank.dataset import Dataset as BaseDataset
 from pylexibank.util import getEvoBibAsBibtex
-from pylexibank.forms import FormSpec
 
 
 class Dataset(BaseDataset):
     dir = Path(__file__).parent
     id = "wangbcd"
-
-    form_spec = FormSpec(
-        brackets={}, separators=",", missing_data=(), strip_inside_brackets=False
-    )
 
     def cmd_download(self, args):
         self.raw_dir.download_and_unpack(
@@ -57,12 +52,13 @@ class Dataset(BaseDataset):
                 if not cogid:
                     maxcogid += 1
                     cogid = p2c[val] = maxcogid
-                for row in args.writer.add_lexemes(
+                row = args.writer.add_form(
                     Language_ID="OldChinese",
                     Parameter_ID=slug(line[0], lowercase=False),
+                    Form=val,
                     Value=val,
                     Source="Hamed2006",
                     Cognacy=p2c.get(val, val),
-                ):
-                    args.writer.add_cognate(lexeme=row, Cognateset_ID=cogid, Source=["Hamed2006"])
+                )
+                args.writer.add_cognate(lexeme=row, Cognateset_ID=cogid, Source=["Hamed2006"])
                 idx += 1
