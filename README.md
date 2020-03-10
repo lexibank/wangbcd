@@ -8,10 +8,10 @@ This dataset is licensed under a https://creativecommons.org/licenses/by-nc/4.0/
 
 Available online at https://gist.github.com/LinguList/7481097
 
-Conceptlist in Concepticon: [Wang-2006-200](http://concepticon.clld.org/contributions/Wang-2006-200)
 
+Conceptlists in Concepticon:
+- [Wang-2006-200](https://concepticon.clld.org/contributions/Wang-2006-200)
 ## Statistics
-
 
 
 ![Glottolog: 100%](https://img.shields.io/badge/Glottolog-100%25-brightgreen.svg "Glottolog: 100%")
@@ -20,10 +20,8 @@ Conceptlist in Concepticon: [Wang-2006-200](http://concepticon.clld.org/contribu
 
 - **Varieties:** 24
 - **Concepts:** 200
-- **Lexemes:** 5,579
+- **Lexemes:** 5,584
+- **Sources:** 1
 - **Synonymy:** 1.17
-- **Cognacy:** 4,595 cognates in 607 cognate sets
-- **Invalid lexemes:** 0
-- **Tokens:** 0
-- **Segments:** 0 (0 BIPA errors, 0 CTLS sound class errors, 0 CLTS modified)
-- **Inventory size (avg):** 0.00
+- **Cognacy:** 5,584 cognates in 1,591 cognate sets (984 singletons)
+- **Cognate Diversity:** 0.26
