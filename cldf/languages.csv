@@ -1,25 +1,25 @@
 ID,Name,Glottocode,Glottolog_Name,ISO639P3code,Macroarea,Latitude,Longitude,Family
-Anyi,Anyi,ganc1239,Gan Chinese,gan,Eurasia,27.9896,115.166,Sino-Tibetan
-Beijing,Beijing,mand1415,Mandarin Chinese,cmn,Eurasia,40.0209,116.228,Sino-Tibetan
-Changsha,Changsha,xian1251,Xiang Chinese,hsn,Eurasia,27.66847,111.47112,Sino-Tibetan
-Chengdu,Chengdu,mand1415,Mandarin Chinese,cmn,Eurasia,40.0209,116.228,Sino-Tibetan
-Fuzhou,Fuzhou,mind1253,Min Dong Chinese,cdo,Eurasia,26.0,119.5,Sino-Tibetan
-Guangzhou,Guangzhou,yuec1235,Yue Chinese,yue,Eurasia,23.0,113.0,Sino-Tibetan
+Anyi,Anyi,ganc1239,,,,,,
+Beijing,Beijing,mand1415,,,,,,
+Changsha,Changsha,xian1251,,,,,,
+Chengdu,Chengdu,mand1415,,,,,,
+Fuzhou,Fuzhou,mind1253,,,,,,
+Guangzhou,Guangzhou,yuec1235,,,,,,
 Lianchang,Lianchang,hakk1239,,,,,,
-Meixian,Meixian,hakk1236,Hakka Chinese,hak,Eurasia,25.0,116.0,Sino-Tibetan
-Nanchang,Nanchang,ganc1239,Gan Chinese,gan,Eurasia,27.9896,115.166,Sino-Tibetan
-Ningbo,Ningbo,wuch1236,Wu Chinese,wuu,Eurasia,29.8621,119.682,Sino-Tibetan
-Ningxia,Ningxia,mand1415,Mandarin Chinese,cmn,Eurasia,40.0209,116.228,Sino-Tibetan
-Shanghai,Shanghai,wuch1236,Wu Chinese,wuu,Eurasia,29.8621,119.682,Sino-Tibetan
-Shanghai_B,Shanghai_B,wuch1236,Wu Chinese,wuu,Eurasia,29.8621,119.682,Sino-Tibetan
-Shuangfeng,Shuangfeng,xian1251,Xiang Chinese,hsn,Eurasia,27.66847,111.47112,Sino-Tibetan
-Suzhou,Suzhou,wuch1236,Wu Chinese,wuu,Eurasia,29.8621,119.682,Sino-Tibetan
-Taibei,Taibei,minn1241,Min Nan Chinese,nan,Eurasia,24.5,118.17,Sino-Tibetan
-Taiyuan,Taiyuan,jiny1235,Jinyu Chinese,cjy,Eurasia,38.8284,111.278,Sino-Tibetan
-Wenzhou,Wenzhou,wuch1236,Wu Chinese,wuu,Eurasia,29.8621,119.682,Sino-Tibetan
-Wuhan,Wuhan,mand1415,Mandarin Chinese,cmn,Eurasia,40.0209,116.228,Sino-Tibetan
-Xiamen,Xiamen,minn1241,Min Nan Chinese,nan,Eurasia,24.5,118.17,Sino-Tibetan
-Yingshan,Yingshan,mand1415,Mandarin Chinese,cmn,Eurasia,40.0209,116.228,Sino-Tibetan
-Yuci,Yuci,jiny1235,Jinyu Chinese,cjy,Eurasia,38.8284,111.278,Sino-Tibetan
-Zhanping,Zhanping,minn1241,Min Nan Chinese,nan,Eurasia,24.5,118.17,Sino-Tibetan
-OldChinese,OldChinese,sini1245,Sinitic,,,,,Sino-Tibetan
+Meixian,Meixian,hakk1236,,,,,,
+Nanchang,Nanchang,ganc1239,,,,,,
+Ningbo,Ningbo,wuch1236,,,,,,
+Ningxia,Ningxia,mand1415,,,,,,
+Shanghai,Shanghai,wuch1236,,,,,,
+Shanghai_B,Shanghai_B,wuch1236,,,,,,
+Shuangfeng,Shuangfeng,xian1251,,,,,,
+Suzhou,Suzhou,wuch1236,,,,,,
+Taibei,Taibei,minn1241,,,,,,
+Taiyuan,Taiyuan,jiny1235,,,,,,
+Wenzhou,Wenzhou,wuch1236,,,,,,
+Wuhan,Wuhan,mand1415,,,,,,
+Xiamen,Xiamen,minn1241,,,,,,
+Yingshan,Yingshan,mand1415,,,,,,
+Yuci,Yuci,jiny1235,,,,,,
+Zhanping,Zhanping,minn1241,,,,,,
+OldChinese,OldChinese,sini1245,,,,,,
