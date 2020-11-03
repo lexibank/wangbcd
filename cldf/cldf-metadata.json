@@ -12,30 +12,30 @@
     "dc:related": null,
     "dc:source": "sources.bib",
     "dc:title": "Basic Words in Chinese Dialects",
-    "dcat:accessURL": "https://github.com/lexibank/wangbcd/",
+    "dcat:accessURL": "https://github.com/lexibank/wangbcd",
     "prov:wasDerivedFrom": [
         {
             "rdf:type": "prov:Entity",
             "dc:title": "Repository",
-            "rdf:about": "https://github.com/lexibank/wangbcd/",
-            "dc:created": "b02882f"
+            "rdf:about": "https://github.com/lexibank/wangbcd",
+            "dc:created": "6f531fc"
         },
         {
             "rdf:type": "prov:Entity",
             "dc:title": "Glottolog",
             "rdf:about": "https://github.com/glottolog/glottolog",
-            "dc:created": "v4.2.1-7-g35d84acf81"
+            "dc:created": "v4.2.1"
         },
         {
             "rdf:type": "prov:Entity",
             "dc:title": "Concepticon",
             "rdf:about": "https://github.com/concepticon/concepticon-data",
-            "dc:created": "v2.3.0-107-g79157a1"
+            "dc:created": "v2.3.0"
         },
         {
             "rdf:type": "prov:Entity",
             "dc:title": "CLTS",
-            "rdf:about": "https://github.com/cldf-clts/clts/",
+            "rdf:about": "https://github.com/cldf-clts/clts",
             "dc:created": "v1.4"
         }
     ],
