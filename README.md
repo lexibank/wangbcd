@@ -1,10 +1,10 @@
-# Basic Words in Chinese Dialects
+# CLDF dataset derived from Wang's "Basic Words in Chinese Dialects" from 2004
 
 Cite the source dataset as
 
 > Wang, F. 2004. BCD: basic words of Chinese dialects. Unpublished dataset. [Digital version in: List, J.-M. (2015): Network perspectives on Chinese dialect history. Bulletin of Chinese Linguistics 8. 42-67.]
 
-This dataset is licensed under a https://creativecommons.org/licenses/by-nc/4.0/ license
+This dataset is licensed under a CC-BY-4.0 license
 
 Available online at https://gist.github.com/LinguList/7481097
 
@@ -20,25 +20,25 @@ The original data underlying the article by Ben Hamed and Wang (2006) was kindly
 ## Statistics
 
 
-[![Build Status](https://travis-ci.org/lexibank/wangbcd.svg?branch=master)](https://travis-ci.org/lexibank/wangbcd)
+[![CLDF validation](https://github.com/lexibank/wangbcd/workflows/CLDF-validation/badge.svg)](https://github.com/lexibank/wangbcd/actions?query=workflow%3ACLDF-validation)
 ![Glottolog: 100%](https://img.shields.io/badge/Glottolog-100%25-brightgreen.svg "Glottolog: 100%")
 ![Concepticon: 100%](https://img.shields.io/badge/Concepticon-100%25-brightgreen.svg "Concepticon: 100%")
 ![Source: 100%](https://img.shields.io/badge/Source-100%25-brightgreen.svg "Source: 100%")
 
 - **Varieties:** 24
 - **Concepts:** 200
-- **Lexemes:** 5,583
+- **Lexemes:** 5,580
 - **Sources:** 1
 - **Synonymy:** 1.17
-- **Cognacy:** 5,583 cognates in 1,606 cognate sets (1,008 singletons)
+- **Cognacy:** 5,580 cognates in 1,603 cognate sets (1,005 singletons)
 - **Cognate Diversity:** 0.26
 
 # Contributors
 
 Name | GitHub user | Description | Role
  --- | --- | --- | ---
-Wang Feng | | data collection | DataCollector
-Johann-Mattis List | @lingulist | maintainer, data conversion | Author
-Robert Forkel | @xrotwang | maintainer | Author
+Wang Feng | | data collection | Author 
+Johann-Mattis List | @lingulist | maintainer, data conversion | Other
+Robert Forkel | @xrotwang | maintainer | Other
 
 

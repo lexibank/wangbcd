@@ -1,5 +1,5 @@
 {
-    "title": "Basic Words in Chinese Dialects",
+    "title": "CLDF dataset derived from Wang's \"Basic Words in Chinese Dialects\" from 2004",
     "access_right": "open",
     "keywords": [
         "cldf:Wordlist",
@@ -7,22 +7,20 @@
     ],
     "creators": [
         {
-            "name": "Johann-Mattis List"
-        },
-        {
-            "name": "Robert Forkel"
+            "name": "Wang Feng"
         }
     ],
     "contributors": [
         {
-            "name": "Wang Feng",
-            "type": "DataCollector"
+            "name": "Johann-Mattis List",
+            "type": "Other"
+        },
+        {
+            "name": "Robert Forkel",
+            "type": "Other"
         }
     ],
     "communities": [
-        {
-            "identifier": "lexibank"
-        },
         {
             "identifier": "lexibank"
         }
@@ -30,6 +28,6 @@
     "upload_type": "dataset",
     "description": "<p>Cite the source of the dataset as:</p>\n\n<blockquote>\n<p>Wang, F. 2004. BCD: basic words of Chinese dialects. Unpublished dataset. [Digital version in: List, J.-M. (2015): Network perspectives on Chinese dialect history. Bulletin of Chinese Linguistics 8. 42-67.]</p>\n</blockquote>",
     "license": {
-        "id": "CC-BY-NC-4.0"
+        "id": "CC-BY-4.0"
     }
 }
