@@ -1,8 +1,16 @@
 # CLDF dataset derived from Wang's "Basic Words in Chinese Dialects" from 2004
 
-Cite the source dataset as
+[![CLDF validation](https://github.com/lexibank/wangbcd/workflows/CLDF-validation/badge.svg)](https://github.com/lexibank/wangbcd/actions?query=workflow%3ACLDF-validation)
 
-> Wang, F. 2004. BCD: basic words of Chinese dialects. Unpublished dataset. [Digital version in: List, J.-M. (2015): Network perspectives on Chinese dialect history. Bulletin of Chinese Linguistics 8. 42-67.]
+## How to cite
+
+If you use these data please cite
+- the original source
+  > Wang, F. 2004. BCD: basic words of Chinese dialects. Unpublished dataset. [Digital version in: List, J.-M. (2015): Network perspectives on Chinese dialect history. Bulletin of Chinese Linguistics 8. 42-67.]
+- the derived dataset using the DOI of the [particular released version](../../releases/) you were using
+
+## Description
+
 
 This dataset is licensed under a CC-BY-4.0 license
 
@@ -42,3 +50,10 @@ Johann-Mattis List | @lingulist | maintainer, data conversion | Other
 Robert Forkel | @xrotwang | maintainer | Other
 
 
+
+
+## CLDF Datasets
+
+The following CLDF datasets are available in [cldf](cldf):
+
+- CLDF [Wordlist](https://github.com/cldf/cldf/tree/master/modules/Wordlist) at [cldf/cldf-metadata.json](cldf/cldf-metadata.json)
